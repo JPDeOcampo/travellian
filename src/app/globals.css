@@ -1,27 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', 'Open-Sans', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.default-container{
+    @apply w-full max-w-8xl mx-auto px-16 py-10;
+}
+
+label{
+    @apply text-secondary-300 text-p1 uppercase;
+}
+
+input{
+    @apply border border-b-1 border-neutral-black border-t-0 border-r-0 border-l-0 outline-transparent;
+}
+
+.overlay-black{
+    z-index: 1;
+    background: rgb(0, 0, 0, 0.3);
+    @apply absolute inset-0;
+}
+.hero-content::after{
+    content: "";
+    @apply absolute left-0 bg-neutral-white h-full w-1/4 mr-auto; 
 }
