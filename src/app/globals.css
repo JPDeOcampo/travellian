@@ -27,6 +27,13 @@ input{
     background: rgb(0, 0, 0, 0.3);
     @apply absolute inset-0;
 }
+
+.overlay-primary{
+    z-index: 1;
+    background: rgb(255, 165, 138, 0.2);
+    @apply absolute inset-0;
+}
+
 .hero-content::after{
     content: "";
     @apply absolute left-0 bg-neutral-white h-full w-1/4 mr-auto; 

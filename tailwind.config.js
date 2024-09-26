@@ -17,8 +17,10 @@ module.exports = {
             neutral: {
               white: "#FFFFFF",
               black: "#000000",
+              grey: "#767E86",
             },
             primary: {
+              25: "#FFF8F1",
               50: "#FFE6DE",
               100: "#FFDFD5",
               200: "#FFD0C2",
@@ -29,7 +31,7 @@ module.exports = {
               700: "#AD705E",
               800: "#855648",
               900: "#5C3B32",
-              DEFAULT: "#FFA58A",
+              DEFAULT: "#FF7654",
             },
             secondary: {
               50: "#C6C6C6",
@@ -65,8 +67,11 @@ module.exports = {
         p1: ["1rem", "1.5rem"],
         p2: ["0.875rem", "1.375rem"],
         micro: ["0.75rem", "1rem"],
-        
       },
+      boxShadow:{
+        'cardShadow-1': '8px 8px 8px rgba(0, 0, 0, 0.2)',
+        'cardShadow-2': '1px 4px 8px rgba(0, 0, 0, 0.2)',
+      }
     },
   },
 };
