@@ -5,8 +5,8 @@ import { IoMdPin } from "react-icons/io";
 const DestinationSection = () => {
     return (
         <section className="h-full relative default-container">
-            <SubHeader title={"Popular Destinations"} subtitle={"Most popular destinations around the world, from historical places to natural wonders."} position={"left"} lineWidth={"180px"}/>
-            <div className="flex gap-4 mt-7">
+            <SubHeader title={"Popular Destinations"} subtitle={"Most popular destinations around the world, from historical places to natural wonders."} position={"left"} lineWidth={"180px"} hasBtn={true} />
+            <div className="flex gap-6 mt-7">
                 {destinations.map((item, index) => {
                     return (
                         <div className="h-[497px] w-[376px] rounded-3xl overflow-hidden relative shadow-cardShadow-1" key={index}>
@@ -18,7 +18,7 @@ const DestinationSection = () => {
                                     <span><IoMdPin className="text-neutral-white text-sm" /></span>
                                     <p className="text-neutral-white text-p1">{item.country}</p>
                                 </div>
-                                
+
                             </div>
                         </div>
                     )

@@ -1,13 +1,13 @@
 import SubHeader from "@/components/shared/components/subheader"
 import { specialOffer } from "@/components/shared/constant/special-offer"
 import { FaStar } from "react-icons/fa";
+
 const SpecialOffer = () => {
     return (
-        <section className="h-full relative default-container">
-            <SubHeader title={"Special Offer"} subtitle={"Check out our special offer and discounts."} position={"right"} lineWidth={"140px"} />
-            <div className="flex gap-4 mt-7">
+        <section className="default-container">
+            <SubHeader title={"Special Offer"} subtitle={"Check out our special offer and discounts."} position={"right"} lineWidth={"140px"} hasBtn={true} />
+            <div className="flex gap-12 mt-7">
                 {specialOffer.map((item, index) => {
-                    let stars = item.ratings;
                     return (
                         <div className="h-auto min-h-[550px] w-[497px] rounded-3xl overflow-hidden relative flex flex-col shadow-cardShadow-2" key={index}>
                             <div className="w-full h-60 relative">
@@ -28,7 +28,7 @@ const SpecialOffer = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <p className="text-p1">{item.desc}</p>
+                                        <p className="text-p1 text-secondary">{item.desc}</p>
                                     </div>
                                 </div>
 
@@ -36,7 +36,7 @@ const SpecialOffer = () => {
                                     <div>
                                         <p className="text-p1 text-neutral-grey">From <span className="text-h3 font-semibold text-primary">€{item.price}</span></p>
                                     </div>
-                                    <button className="bg-primary hover:bg-primary-300 uppercase px-8 py-3 rounded-lg text-neutral-white text-p1">Details</button>
+                                    <button className="button-primary">Details</button>
                                 </div>
                             </div>
                         </div>

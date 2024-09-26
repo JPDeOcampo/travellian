@@ -9,9 +9,14 @@ html,
 body {
   font-family: 'Inter', 'Open-Sans', sans-serif;
 }
-
+.nav-container{
+    @apply w-full max-w-8xl mx-auto px-8 lg:px-16 py-10;
+}
+.hero-container{
+    @apply w-full max-w-8xl mx-auto p-8 lg:p-16;
+}
 .default-container{
-    @apply w-full max-w-8xl mx-auto px-16 py-10;
+    @apply w-full max-w-8xl mx-auto p-8 lg:p-16 h-auto lg:h-full min-h-full relative;
 }
 
 label{
@@ -37,4 +42,8 @@ input{
 .hero-content::after{
     content: "";
     @apply absolute left-0 bg-neutral-white h-full w-1/4 mr-auto; 
+}
+
+.button-primary{
+    @apply bg-primary hover:bg-primary-300 uppercase px-8 py-3 rounded-xl text-neutral-white text-p1;
 }

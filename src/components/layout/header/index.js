@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
     return (
         <nav className='absolute z-50 w-full'>
-            <div className='default-container relative flex justify-between items-center'>
+            <div className='nav-container relative flex justify-between items-center'>
                 <div>
                     <img src='/images/logo.png' />
                 </div>
