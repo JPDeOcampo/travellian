@@ -4,8 +4,8 @@ import { FaStar } from "react-icons/fa";
 
 const TripPlanners = () => {
     return (
-        <section className="default-container">
-            <div className="h-full w-full grid grid-cols-1 lg:flex items-center gap-16">
+        <section className="default-container flex items-center">
+            <div className="w-full pt-14 grid grid-cols-1 lg:flex items-center gap-16">
                 <div className="h-full w-full lg:w-1/4 flex flex-col justify-center">
                     <SubHeader title={"Trip Planners"} subtitle={"20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling, start throwing off the bowlines."} position={"left"} lineWidth={"90px"} />
                     <div>
