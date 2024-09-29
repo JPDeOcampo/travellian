@@ -5,9 +5,9 @@ const OurBlog = () => {
     return (
         <section className="default-container">
             <SubHeader title={"Our Blog"} subtitle={"An insight the incredible experience in the world."} position={"left"} lineWidth={"90px"} />
-            <div className="flex flex-col lg:flex-row gap-8 h-full lg:h-3/4">
+            <div className="flex items-center flex-col lg:flex-row gap-8 lg:h-3/4">
                 <div className="rounded-2xl overflow-hidden">
-                    <div className="flex gap-4 h-full w-full min-w-96 relative">
+                    <div className="flex gap-4 w-full min-w-96 relative">
                         <div className="overlay-primary"></div>
                         <img src='/images/blog/lake-como.jpg' alt="special offer" className="h-full w-full object-cover" />
                     </div>

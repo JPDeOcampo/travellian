@@ -4,6 +4,7 @@ import SpecialOffer from "@/components/layout/special-offer";
 import OurBlog from "@/components/layout/our-blog";
 import TripPlanners from "@/components/layout/trip-planners";
 import DestinationGallery from "@/components/layout/destination-gallery";
+import Footer from "@/components/layout/footer";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <OurBlog />
       <TripPlanners />
       <DestinationGallery />
+      <Footer />
     </>
   );
 }

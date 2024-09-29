@@ -1,6 +1,5 @@
 import SubHeader from "@/components/shared/components/subheader"
 import { destinationGallery } from "@/components/shared/constant/destination-gallery";
-import { FaStar } from "react-icons/fa";
 
 const DestinationGallery = () => {
     return (
