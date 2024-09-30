@@ -16,7 +16,7 @@ body {
     @apply w-full max-w-8xl mx-auto p-8 lg:p-16;
 }
 .default-container{
-    @apply w-full max-w-8xl mx-auto p-8 lg:p-16 h-auto min-h-full relative;
+    @apply w-full max-w-8xl mx-auto px-8 lg:px-16 pt-16 pb-16 lg:pb-32 h-auto relative;
 }
 
 label{
@@ -45,5 +45,5 @@ input{
 }
 
 .button-primary{
-    @apply bg-primary hover:bg-primary-300 uppercase px-8 py-3 rounded-xl text-neutral-white text-p1;
+    @apply bg-primary w-auto h-auto hover:bg-primary-300 uppercase px-8 py-3 rounded-xl text-neutral-white text-p1;
 }

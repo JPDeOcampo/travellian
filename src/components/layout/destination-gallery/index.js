@@ -6,7 +6,7 @@ const DestinationGallery = () => {
         <section className="default-container">
             <SubHeader title={"Destination Gallery"} subtitle={"Our photo gallery on trip."} position={"left"} lineWidth={"90px"} hasBtn={true} />
             <div className="w-full pt-20 grid grid-cols-1 lg:flex items-center gap-16">
-                <div className="w-full grid grid-cols-1 lg:grid-cols-4 gap-44 lg:gap-4">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-4 gap-16 lg:gap-4">
                     {destinationGallery.map((item, index) => {
                         return (
                             <div className="group relative" key={index}>

@@ -4,7 +4,7 @@ import { IoMdPin } from "react-icons/io";
 
 const DestinationSection = () => {
     return (
-        <section className="h-full relative default-container">
+        <section className="h-full relative default-container !pt-28">
             <SubHeader title={"Popular Destinations"} subtitle={"Most popular destinations around the world, from historical places to natural wonders."} position={"left"} lineWidth={"180px"} hasBtn={true} />
             <div className="flex gap-6 mt-7">
                 {destinations.map((item, index) => {
