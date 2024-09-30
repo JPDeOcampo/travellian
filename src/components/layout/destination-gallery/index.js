@@ -1,5 +1,5 @@
 import SubHeader from "@/components/shared/components/subheader"
-import { destinationGallery } from "@/components/shared/constant/destination-gallery";
+import { destinationGallery } from "@/components/shared/constant";
 
 const DestinationGallery = () => {
     return (

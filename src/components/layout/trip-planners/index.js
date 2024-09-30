@@ -1,5 +1,5 @@
 import SubHeader from "@/components/shared/components/subheader"
-import { tripPlanners } from "@/components/shared/constant/trip-planners";
+import { tripPlanners } from "@/components/shared/constant";
 import { FaStar } from "react-icons/fa";
 
 const TripPlanners = () => {

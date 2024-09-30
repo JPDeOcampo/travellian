@@ -1,4 +1,4 @@
-import React from 'react'
+import { menuItem } from "@/components/shared/constant";
 
 const Header = () => {
     return (
@@ -9,11 +9,11 @@ const Header = () => {
                 </div>
                 <div>
                     <ul className='flex gap-8'>
-                        <li><a className='text-neutral-white' href='#'>Home</a></li>
-                        <li><a className='text-neutral-white' href='#'>Explore</a></li>
-                        <li><a className='text-neutral-white' href='#'>Travel</a></li>
-                        <li><a className='text-neutral-white' href='#'>Blog</a></li>
-                        <li><a className='text-neutral-white' href='#'>Pricing</a></li>
+                        {
+                            menuItem.map((item, index) => (
+                                <li><a className='text-neutral-white' href='#' key={index}>{item.title}</a></li>
+                            ))
+                        }
                     </ul>
                 </div>
                 <div>

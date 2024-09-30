@@ -1,5 +1,5 @@
 import SubHeader from "@/components/shared/components/subheader"
-import { destinations } from "@/components/shared/constant/destinations"
+import { destinations } from "@/components/shared/constant"
 import { IoMdPin } from "react-icons/io";
 
 const DestinationSection = () => {

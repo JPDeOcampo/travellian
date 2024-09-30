@@ -1,5 +1,5 @@
 import SubHeader from "@/components/shared/components/subheader"
-import { specialOffer } from "@/components/shared/constant/special-offer"
+import { specialOffer } from "@/components/shared/constant"
 import { FaStar } from "react-icons/fa";
 
 const SpecialOffer = () => {
