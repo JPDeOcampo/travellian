@@ -1,15 +1,19 @@
+import { useState } from "react";
 import SubHeader from "@/components/shared/components/subheader"
 import { destinations } from "@/components/shared/constant"
 import { IoMdPin } from "react-icons/io";
-
+import ImageSlideSide from "@/components/shared/components/image-slide-side";
 const DestinationSection = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
     return (
         <section className="h-full relative default-container !pt-28">
-            <SubHeader title={"Popular Destinations"} subtitle={"Most popular destinations around the world, from historical places to natural wonders."} position={"left"} lineWidth={"180px"} hasBtn={true} />
-            <div className="flex gap-6 mt-7">
+            <SubHeader title={"Popular Destinations"}
+                subtitle={"Most popular destinations around the world, from historical places to natural wonders."}
+                position={"left"} lineWidth={"180px"} hasBtn={true} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} value={destinations} />
+            <ImageSlideSide className={"flex gap-6"} currentIndex={currentIndex} totalSlides={destinations?.length}>
                 {destinations.map((item, index) => {
                     return (
-                        <div className="h-[497px] w-[376px] rounded-3xl overflow-hidden relative shadow-cardShadow-1" key={index}>
+                        <div className="h-[497px] w-[376px] rounded-3xl overflow-hidden relative shadow-cardShadow-1 flex-shrink-0" key={index}>
                             <div className="overlay-primary"></div>
                             <img src={item.image} className="h-full w-full" />
                             <div className="absolute h-full w-full flex flex-col justify-end gap-1 inset-0 p-6 z-[2]">
@@ -24,8 +28,7 @@ const DestinationSection = () => {
                     )
                 })
                 }
-
-            </div>
+            </ImageSlideSide>
         </section>
     )
 }

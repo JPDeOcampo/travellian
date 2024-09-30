@@ -1,8 +1,8 @@
 import { menuItem, informationItems, contactInfo, socialItems } from "@/components/shared/constant";
 const NewsLetter = () => {
   return (
-    <div className="bg-transparent h-auto w-full absolute flex justify-center -top-24 px-7 z-10">
-      <div className="bg-neutral-white h-auto lg:h-[200px] w-full max-w-[1200px] rounded-2xl relative shadow-cardShadow-3 py-5 px-8 lg:px-16 flex flex-col lg:flex-row gap-8 lg:gap-4 items-start lg:items-center">
+    <div className="bg-transparent h-auto w-full absolute flex justify-center -top-20 px-7 z-10">
+      <div className="bg-neutral-white h-auto lg:h-[180px] w-full max-w-[1200px] rounded-2xl relative shadow-cardShadow-3 py-5 px-8 lg:px-16 flex flex-col lg:flex-row gap-8 lg:gap-4 items-start lg:items-center">
         <div className="w-1/2">
           <h2 className="text-h2 text-neutral-grey tracking-wider">Our NewsLetter</h2>
         </div>

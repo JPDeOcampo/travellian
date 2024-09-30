@@ -91,7 +91,93 @@ const destinations = [
         title: "Berlin",
         country: "Germany",
         image: "/images/destinations/germany.jpg"
-    }
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/destinations/germany.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/switzerland.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/colosseum.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/eiffel-tower.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/switzerland.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/colosseum.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/eiffel-tower.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/switzerland.jpg"
+    },
+    {
+        title: "Berlin",
+        country: "Germany",
+        image: "/images/trip-planners/colosseum.jpg"
+    },
+    
 ];
 
 const specialOffer = [

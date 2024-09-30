@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <nav className='absolute z-50 w-full'>
             <div className='nav-container relative flex justify-between items-center'>
-                <div>
+                <div data-aos="fade-down">
                     <img src='/images/logo.png' />
                 </div>
                 <div>
