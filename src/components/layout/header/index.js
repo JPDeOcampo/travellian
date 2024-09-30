@@ -11,7 +11,7 @@ const Header = () => {
                     <ul className='flex gap-8'>
                         {
                             menuItem.map((item, index) => (
-                                <li><a className='text-neutral-white' href='#' key={index}>{item.title}</a></li>
+                                <li key={index}><a className='text-neutral-white' href='#'>{item.title}</a></li>
                             ))
                         }
                     </ul>

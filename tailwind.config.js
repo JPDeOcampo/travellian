@@ -50,10 +50,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
       maxWidth:{
         '8xl' : '105rem',
       },
@@ -72,6 +68,7 @@ module.exports = {
       boxShadow:{
         'cardShadow-1': '8px 8px 8px rgba(0, 0, 0, 0.2)',
         'cardShadow-2': '1px 4px 8px rgba(0, 0, 0, 0.2)',
+        'cardShadow-3': '0px 0px 8px rgba(0, 0, 0, 0.2)',
       }
     },
   },
