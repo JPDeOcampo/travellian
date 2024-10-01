@@ -11,7 +11,7 @@ const TravelerExperiences = () => {
                 <ImageSlideSide slideContainer={"pt-14"} slideContainerChild={"w-full flex gap-4"}>
                     {travelerExperiences.map((item, index) => {
                         return (
-                            <div className="relative bg-neutral-grey1 h-[313px] w-full max-w-[650px] flex-shrink-0 rounded-3xl shadow-cardShadow-1" key={index}>
+                            <div className="relative bg-neutral-grey1 h-auto min-h-[313px] w-full max-w-[650px] flex-shrink-0 rounded-3xl shadow-cardShadow-1" key={index}>
                                 <div className={`absolute h-20 w-20 rounded-full overflow-hidden left-10 -top-10`}>
                                     <img src={item.image} className="h-full w-full object-cover" alt={item.name}/>
                                 </div>

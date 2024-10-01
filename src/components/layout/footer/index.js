@@ -1,10 +1,10 @@
 import { menuItem, informationItems, contactInfo, socialItems } from "@/components/shared/constant";
 const NewsLetter = () => {
   return (
-    <div className="bg-transparent h-auto w-full absolute flex justify-center -top-20 px-7 z-10">
+    <div className="bg-transparent h-auto w-full absolute flex justify-center -top-32 md:-top-28 lg:-top-20 px-7 z-10">
       <div className="bg-neutral-white h-auto lg:h-[150px] w-full max-w-[1150px] rounded-2xl relative shadow-cardShadow-3 py-5 px-8 lg:px-16 flex flex-col lg:flex-row gap-8 lg:gap-4 items-start lg:items-center">
         <div className="w-1/2">
-          <h2 className="text-h2 text-neutral-grey tracking-wider">Our NewsLetter</h2>
+          <h2 className="text-h2 text-neutral-grey font-medium tracking-wider">Our NewsLetter</h2>
         </div>
 
         <div className="flex justify-between w-full gap-4">
@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <section className="w-full bg-neutral-blue h-auto relative">
       <NewsLetter />
-      <div className="default-container !pt-52 !pb-28 relative">
+      <div className="default-container !pt-40 !pb-28 relative">
         <div className="flex flex-col lg:flex-row justify-between gap-14 lg:gap-8 w-full">
           <div>
             <img src="/images/logo.png" className="mb-4" />
