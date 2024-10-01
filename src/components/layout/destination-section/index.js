@@ -10,7 +10,7 @@ const DestinationSection = () => {
             <SubHeader title={"Popular Destinations"}
                 subtitle={"Most popular destinations around the world, from historical places to natural wonders."}
                 position={"left"} lineWidth={"180px"} hasBtn={true} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} value={destinations} />
-            <ImageSlideSide className={"flex gap-6"} currentIndex={currentIndex} totalSlides={destinations?.length}>
+            <ImageSlideSide slideContainer={"pt-7"} slideContainerChild={"flex gap-6"} currentIndex={currentIndex} totalSlides={destinations?.length}>
                 {destinations.map((item, index) => {
                     return (
                         <div className="h-[497px] w-[376px] rounded-3xl overflow-hidden relative shadow-cardShadow-1 flex-shrink-0" key={index}>

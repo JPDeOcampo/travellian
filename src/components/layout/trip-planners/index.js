@@ -1,6 +1,6 @@
 import SubHeader from "@/components/shared/components/subheader"
 import { tripPlanners } from "@/components/shared/constant";
-import { FaStar } from "react-icons/fa";
+import StarsComponent from "@/components/shared/components/stars";
 
 const TripPlanners = () => {
     return (
@@ -18,7 +18,7 @@ const TripPlanners = () => {
                             <div className="group relative" key={index}>
                                 <div className={`h-[400px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-1 z-[4] ${index % 2 === 0 ? "-translate-y-28" : "-translate-y-28 group-hover:lg:-translate-y-28 lg:translate-y-0"} transition-all`}>
                                     <div className="overlay-primary"></div>
-                                    <img src={item.image} className="h-full w-full object-cover" alt={item.title}/>
+                                    <img src={item.image} className="h-full w-full object-cover" alt={item.title} />
                                 </div>
                                 <div className={`absolute h-full w-full flex-col justify-end gap-1 inset-0 p-6 z-[2] transition-all flex`}>
                                     <div className="flex justify-between w-full">
@@ -28,14 +28,7 @@ const TripPlanners = () => {
 
                                     <h3 className="text-secondary text-h4 tracking-wide font-semibold">{item.title}</h3>
                                     <div className="flex gap-1 items-center justify-between">
-                                        <div className="flex gap-1 flex-wrap">
-                                            {Array.from({ length: 5 }, (_, i) => {
-                                                return (
-                                                    <span key={i} className={`${i < item.ratings ? '[&_svg]:text-yellow-500' : '[&_svg]:text-secondary-300'}`}><FaStar /></span>
-
-                                                )
-                                            })}
-                                        </div>
+                                        <StarsComponent item={item} />
                                         <p className="text-micro text-secondary font-medium">{item.days} Days tour</p>
                                     </div>
                                 </div>

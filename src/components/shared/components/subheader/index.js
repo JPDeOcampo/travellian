@@ -1,4 +1,3 @@
-
 import ImageSlideButton from "../buttons/image-slide-button"
 
 const SubHeader = ({ title, subtitle, position, lineWidth, hasBtn, currentIndex, setCurrentIndex, value }) => {

@@ -9,6 +9,7 @@ import SpecialOffer from "@/components/layout/special-offer";
 import OurBlog from "@/components/layout/our-blog";
 import TripPlanners from "@/components/layout/trip-planners";
 import DestinationGallery from "@/components/layout/destination-gallery";
+import TravelerExperiences from '@/components/layout/traveler-experience';
 import Footer from "@/components/layout/footer";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       <OurBlog />
       <TripPlanners />
       <DestinationGallery />
+      <TravelerExperiences />
       <Footer />
     </>
   );
