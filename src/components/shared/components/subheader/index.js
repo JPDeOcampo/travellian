@@ -1,6 +1,6 @@
 import ImageSlideButton from "../buttons/image-slide-button"
 
-const SubHeader = ({ title, subtitle, position, lineWidth, hasBtn, currentIndex, setCurrentIndex, value }) => {
+const SubHeader = ({ title, subtitle, position, lineWidth, hasBtn, next, previous, value }) => {
     return (
         <div className={`pt-0 pb-12 h-auto ${hasBtn ? 'min-h-[194px]' : 'min-h-0'} w-full flex ${position === "left" ? 'flex-col lg:flex-row' : 'flex-col lg:flex-row-reverse'}`}>
             <div data-aos="fade-up" className={`w-full flex flex-col gap-4 ${position === "left" ? 'item-start' : 'items-end'}`}>
@@ -15,7 +15,7 @@ const SubHeader = ({ title, subtitle, position, lineWidth, hasBtn, currentIndex,
             {
                 hasBtn && (
                     <div data-aos="fade-down" className={`h-[98px] flex items-end ${position === "left" ? 'justify-start' : 'justify-end'}`}>
-                        <ImageSlideButton currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} value={value}/>
+                        <ImageSlideButton previous={previous} next={next} value={value}/>
                     </div>
                 )
             }

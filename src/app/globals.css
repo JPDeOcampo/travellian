@@ -16,7 +16,7 @@ body {
     @apply w-full max-w-8xl mx-auto p-8 lg:p-16;
 }
 .default-container{
-    @apply w-full max-w-8xl mx-auto px-8 lg:px-16 pt-16 pb-16 lg:pb-32 h-auto relative;
+    @apply w-full max-w-8xl mx-auto px-8 lg:px-16 pt-16 pb-16 lg:pb-32 h-auto relative overflow-x-hidden;
 }
 
 label{

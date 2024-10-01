@@ -1,19 +1,66 @@
+import { useRef } from "react";
 import SubHeader from "@/components/shared/components/subheader"
 import { travelerExperiences } from "@/components/shared/constant";
-import ImageSlideSide from "@/components/shared/components/image-slide-side";
+import ImageSlideButton from "@/components/shared/components/buttons/image-slide-button";
 import StarsComponent from "@/components/shared/components/stars";
+import Carousel from 'react-multi-carousel';
+
+const responsive = {
+    superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 3,
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1500 },
+        items: 2.5,
+    },
+    laptop: {
+        breakpoint: { max: 1500, min: 1024 },
+        items: 2,
+    },
+    lg_tablet: {
+        breakpoint: { max: 1100, min: 1024 },
+        items: 1.5,
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 0 },
+        items: 1,
+    },
+};
 
 const TravelerExperiences = () => {
+    const carouselRef = useRef(null);
+
+    const next = () => {
+        if (carouselRef.current) {
+            carouselRef.current.next();
+        }
+    };
+
+    const previous = () => {
+        if (carouselRef.current) {
+            carouselRef.current.previous();
+        }
+    };
     return (
         <section className="default-container !pb-56">
-            <SubHeader title={"Traveler’s Experiences"} subtitle={"Here some awesome feedback from our travelers."} position={"left"} lineWidth={"90px"} hasBtn={false} />
-            <div className="w-full grid grid-cols-1 lg:flex items-center gap-16">
-                <ImageSlideSide slideContainer={"pt-14"} slideContainerChild={"w-full flex gap-4"}>
+            <SubHeader title={"Traveler’s Experiences"} subtitle={"Here some awesome feedback from our travelers."} position={"left"} lineWidth={"240px"} hasBtn={false} />
+            
+                <Carousel
+                    swipeable={false}
+                    draggable={false}
+                    showDots={false}
+                    responsive={responsive}
+                    ssr={true}
+                    arrows={false}
+                    containerClass="py-16"
+                    ref={carouselRef}
+                    itemClass="pr-4 lg:!pr-6">
                     {travelerExperiences.map((item, index) => {
                         return (
-                            <div className="relative bg-neutral-grey1 h-auto min-h-[313px] w-full max-w-[650px] flex-shrink-0 rounded-3xl shadow-cardShadow-1" key={index}>
+                            <div className="relative bg-neutral-grey1 h-full w-full  flex-shrink-0 rounded-3xl shadow-cardShadow-1" key={index} data-aos="zoom-out-up">
                                 <div className={`absolute h-20 w-20 rounded-full overflow-hidden left-10 -top-10`}>
-                                    <img src={item.image} className="h-full w-full object-cover" alt={item.name}/>
+                                    <img src={item.image} className="h-full w-full object-cover" alt={item.name} />
                                 </div>
                                 <div className="p-10 w-full h-full">
                                     <div className="pt-6 flex flex-col justify-between h-full">
@@ -32,12 +79,11 @@ const TravelerExperiences = () => {
                         )
                     })
                     }
-
-                </ImageSlideSide>
-
-            </div>
-
-
+                </Carousel>
+                <div data-aos="fade-down" className="w-full flex justify-end">
+                    <ImageSlideButton previous={previous} next={next} />
+                </div>
+            
         </section>
     )
 }

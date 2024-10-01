@@ -16,7 +16,7 @@ const Header = () => {
                         }
                     </ul>
                 </div>
-                <div>
+                <div data-aos="zoom-in-left">
                     <button className='bg-transparent text-neutral-white hover:text-primary py-2 px-4 rounded-md'>Login</button>
                     <button className='bg-primary hover:bg-primary-300 text-neutral-black py-2 px-4 rounded-md'>Sign Up</button>
                 </div>

@@ -25,7 +25,7 @@ const HeroContent = () => {
                             </div>
                         </form>
                     </div>
-                    <button className='h-full bg-primary hover:bg-primary-300 w-[12.5rem] text-neutral-white text-h3'>Book Now</button>
+                    <button className='h-full bg-primary hover:bg-primary-300 w-[12.5rem] text-neutral-white text-h3'><span data-aos="fade-down">Book Now</span></button>
                 </div>
 
             </div>
