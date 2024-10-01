@@ -41,9 +41,17 @@ input{
 
 .hero-content::after{
     content: "";
-    @apply absolute left-0 bg-neutral-white h-full w-1/4 mr-auto; 
+    @apply absolute left-0 md:bg-neutral-white h-full w-1/4 mr-auto; 
 }
 
 .button-primary{
     @apply bg-primary w-auto h-auto hover:bg-primary-300 uppercase px-8 py-3 rounded-xl text-neutral-white text-p1;
+}
+.menu-item::after{
+    content: "";
+    @apply relative block scale-x-0 transition-all duration-[0.5s];
+}
+.menu-item:hover::after{
+    content: "";
+    @apply absolute bottom-[-4px] h-[2px] scale-[1] w-full bg-neutral-black lg:bg-primary;
 }

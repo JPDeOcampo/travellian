@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import SubHeader from "@/components/shared/components/subheader"
 import { specialOffer } from "@/components/shared/constant"
-import { FaStar } from "react-icons/fa";
+import StarsComponent from "@/components/shared/components/stars";
 import Carousel from 'react-multi-carousel';
 
 const responsive = {
@@ -61,7 +61,7 @@ const SpecialOffer = () => {
                 ssr={true}
                 arrows={false}
                 containerClass="py-6"
-                ref={carouselRef} 
+                ref={carouselRef}
                 itemClass="pr-4 lg:!pr-6">
 
                 {specialOffer.map((item, index) => {
@@ -73,16 +73,9 @@ const SpecialOffer = () => {
                             </div>
                             <div className="h-full w-full py-7 px-6 flex flex-col gap-12 bg-primary-25">
                                 <div className="flex flex-col gap-4">
-                                    <div className="flex flex-col gap-1">
-                                        <h4 className="text-h4 text-neutral-grey">{item.country}</h4>
-                                        <div className="flex gap-1">
-                                            {Array.from({ length: 5 }, (_, i) => {
-                                                return (
-                                                    <span key={i} className={`${i < item.ratings ? '[&_svg]:text-yellow-500' : '[&_svg]:text-secondary-300'}`}><FaStar /></span>
-
-                                                )
-                                            })}
-                                        </div>
+                                    <div className="flex flex-col gap-2">
+                                        <h4 className="text-h4 text-neutral-grey font-medium">{item.country}</h4>
+                                        <StarsComponent item={item} />
                                     </div>
                                     <div>
                                         <p className="text-p1 text-secondary">{item.desc}</p>
@@ -91,7 +84,7 @@ const SpecialOffer = () => {
 
                                 <div className="w-full flex flex-row justify-between items-center">
                                     <div>
-                                        <p className="text-p1 text-neutral-grey">From <span className="text-h3 font-semibold text-primary">€{item.price}</span></p>
+                                        <p className="text-p1 text-neutral-grey">From <span className="text-h4 lg:text-h3 font-semibold text-primary">€{item.price}</span></p>
                                     </div>
                                     <button className="button-primary">Details</button>
                                 </div>

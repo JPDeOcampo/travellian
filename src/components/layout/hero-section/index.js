@@ -12,7 +12,7 @@ const HeroSection = () => {
     return (
         <section className="w-full h-full relative" style={customStyle}>
             <div className="overlay-black"></div>
-            <div className="w-full h-full flex justify-center flex-col z-10 gap-10 relative">
+            <div className="w-full h-full flex justify-center flex-col z-10 gap-4 md:gap-10 relative">
                 <div className="hero-container">
                     <HeroTitle />
                 </div>

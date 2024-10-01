@@ -74,140 +74,64 @@ const socialItems = [
 const destinations = [
     {
         title: "Berlin",
-        country: "Germany",
+        country: "Berlin, Germany",
         image: "/images/destinations/germany.jpg"
     },
     {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
+        title: "Eternal City",
+        country: "Rome, Italy",
+        image: "/images/destinations/rome.jpg"
     },
     {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
+        title: "Big Ben",
+        country: "London, United Kingdom",
+        image: "/images/destinations/london.jpg"
     },
     {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
+        title: "Venice",
+        country: "Venice, Italy",
+        image: "/images/destinations/venice.png"
     },
     {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
+        title: "Amsterdam",
+        country: "Amsterdam",
+        image: "/images/destinations/amsterdam.jpg"
     },
     {
         title: "Berlin",
         country: "Germany",
         image: "/images/destinations/germany.jpg"
     },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/switzerland.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/colosseum.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/eiffel-tower.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/switzerland.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/colosseum.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/eiffel-tower.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/switzerland.jpg"
-    },
-    {
-        title: "Berlin",
-        country: "Germany",
-        image: "/images/trip-planners/colosseum.jpg"
-    },
-
 ];
 
 const specialOffer = [
     {
-        country: "Berlin",
-        ratings: 4,
+        country: "Berlin, Germany",
+        ratings: 2,
         desc: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
         price: "3500",
-        image: "/images/destinations/germany.jpg"
+        image: "/images/special/steigenberger-frankfurter.jpg"
     },
     {
-        country: "Berlin",
+        country: "London, United Kingdom",
         ratings: 3,
         desc: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
         price: "3500",
-        image: "/images/destinations/germany.jpg"
+        image: "/images/special/london-the-goring.jpg"
     },
     {
-        country: "Berlin",
+        country: "Paris, France",
         ratings: 5,
         desc: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
         price: "3500",
-        image: "/images/destinations/germany.jpg"
+        image: "/images/special/le-grand-hotel-cabourg.jpg"
     },
     {
-        country: "Berlin",
-        ratings: 5,
+        country: "Italy, Italy",
+        ratings: 4,
         desc: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
         price: "3500",
-        image: "/images/destinations/germany.jpg"
+        image: "/images/special/borgo-egnazia.jpg"
     },
 ];
 
@@ -245,7 +169,7 @@ const tripPlanners = [
 const destinationGallery = [
     {
         title: "Eiffel Tower",
-        ratings: 4,
+        ratings: 5,
         price: "99",
         days: "7",
         image: "/images/trip-planners/eiffel-tower.jpg"
@@ -266,21 +190,7 @@ const destinationGallery = [
     },
     {
         title: "Berlin",
-        ratings: 4,
-        price: "99",
-        days: "7",
-        image: "/images/destinations/germany.jpg"
-    },
-    {
-        title: "Switzerland",
-        ratings: 4,
-        price: "99",
-        days: "7",
-        image: "/images/trip-planners/switzerland.jpg"
-    },
-    {
-        title: "Berlin",
-        ratings: 4,
+        ratings: 3,
         price: "99",
         days: "7",
         image: "/images/destinations/germany.jpg"
@@ -297,22 +207,22 @@ const travelerExperiences = [
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."
     },
     {
-        name: "John Doe",
-        status: "Manager",
+        name: "Karen Lively",
+        status: "Journalist, HWO News",
         image: "/images/trip-planners/switzerland.jpg",
         ratings: 4,
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."
     },
     {
-        name: "John Doe",
-        status: "Financial Advisor",
+        name: "Maik Eberhart",
+        status: "Blogger",
         image: "/images/trip-planners/switzerland.jpg",
         ratings: 4,
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."
     },
     {
-        name: "John Doe",
-        status: "Accountant",
+        name: "Ellen Kaur",
+        status: "Model",
         image: "/images/trip-planners/switzerland.jpg",
         ratings: 4,
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."

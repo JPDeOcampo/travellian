@@ -63,14 +63,14 @@ const TravelerExperiences = () => {
                                     <img src={item.image} className="h-full w-full object-cover" alt={item.name} />
                                 </div>
                                 <div className="p-10 w-full h-full">
-                                    <div className="pt-6 flex flex-col justify-between h-full">
+                                    <div className="pt-6 flex flex-col justify-between gap-6 h-full">
                                         <div className="flex flex-col gap-6">
                                             <p className="text-p1 text-neutral-grey">{item.comment}</p>
                                             <StarsComponent item={item} />
                                         </div>
                                         <div className="flex flex-col gap-0">
-                                            <p className="text-p1 font-medium text-neutral-grey">{item.name}</p>
-                                            <p className="text-p2 text-neutral-grey">{item.status}</p>
+                                            <p className="text-h4 font-medium text-neutral-grey">{item.name}</p>
+                                            <p className="text-p1 text-neutral-grey">{item.status}</p>
                                         </div>
                                     </div>
                                 </div>

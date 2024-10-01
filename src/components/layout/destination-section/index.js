@@ -71,12 +71,12 @@ const DestinationSection = () => {
                     return (
                         <div className="h-[497px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-1 flex-shrink-0" key={index} data-aos="zoom-in-down">
                             <div className="overlay-primary"></div>
-                            <img src={item.image} className="h-full w-full" />
+                            <img src={item.image} className="h-full w-full object-cover" />
                             <div className="absolute h-full w-full flex flex-col justify-end gap-1 inset-0 p-6 z-[2]">
-                                <h3 className="text-neutral-white text-h3 tracking-wide">{item.title}</h3>
+                                <h3 className="text-neutral-white font-semibold text-h3 tracking-wide">{item.title}</h3>
                                 <div className="flex gap-1 items-center">
                                     <span><IoMdPin className="text-neutral-white text-sm" /></span>
-                                    <p className="text-neutral-white text-p1">{item.country}</p>
+                                    <p className="text-neutral-white text-p1 font-medium">{item.country}</p>
                                 </div>
 
                             </div>
