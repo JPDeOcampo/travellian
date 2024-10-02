@@ -4,7 +4,7 @@ import StarsComponent from "@/components/shared/components/stars";
 
 const TripPlanners = () => {
     return (
-        <section className="default-container flex items-center lg:!pt-28">
+        <section className="default-container flex items-center lg:!pt-28" id="trip-planners">
             <div className="w-full pt-0 lg:pt-28 grid grid-cols-1 lg:flex items-center gap-16">
                 <div className={`h-full w-full lg:w-1/4 flex flex-col justify-center pb-24 lg:pb-0`}>
                     <SubHeader title={"Trip Planners"} subtitle={"20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling, start throwing off the bowlines."} position={"left"} lineWidth={"150px"} />

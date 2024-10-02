@@ -10,21 +10,22 @@ import OurBlog from "@/components/layout/our-blog";
 import TripPlanners from "@/components/layout/trip-planners";
 import DestinationGallery from "@/components/layout/destination-gallery";
 import TravelerExperiences from '@/components/layout/traveler-experience';
+import UpButton from '@/components/shared/components/buttons/up-button';
 import Footer from "@/components/layout/footer";
 
 export default function App() {
   
   useEffect(() => {
     AOS.init();
-    const handleScroll = () => {
-      AOS.refresh();
-    };
+    // const handleScroll = () => {
+    //   AOS.refresh();
+    // };
 
-    window.addEventListener('scroll', handleScroll);
+    // window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener('scroll', handleScroll);
+    // };
   }, []);
 
   
@@ -37,6 +38,7 @@ export default function App() {
       <TripPlanners />
       <DestinationGallery />
       <TravelerExperiences />
+      <UpButton />
       <Footer />
     </>
   );

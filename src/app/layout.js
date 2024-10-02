@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body className={`antialiased`}>
         <NextUIProvider className="default relative">
           <Header />
-          <main className="min-h-full h-lvh w-full">
+          <main className="h-auto w-full relative">
             {children}
           </main>
         </NextUIProvider>

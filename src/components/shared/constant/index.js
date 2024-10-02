@@ -5,23 +5,23 @@ import { FaInstagram } from "react-icons/fa6";
 const menuItem = [
     {
         title: "Home",
-        href: "#",
+        href: "#home",
     },
     {
         title: "Explore",
-        href: "#",
+        href: "#destination-section",
     },
     {
         title: "Travel",
-        href: "#",
+        href: "#trip-planners",
     },
     {
         title: "Blog",
-        href: "#",
+        href: "#our-blog",
     },
     {
         title: "Pricing",
-        href: "#",
+        href: "#special-offer",
     },
 ];
 

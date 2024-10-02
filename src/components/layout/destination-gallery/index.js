@@ -49,7 +49,7 @@ const DestinationGallery = () => {
     };
 
     return (
-        <section className="default-container">
+        <section className="default-container" id="destination-gallery">
             <SubHeader title={"Destination Gallery"} subtitle={"Our photo gallery on trip."} position={"left"} lineWidth={"290px"} hasBtn={true} next={next} previous={previous} />
             <Carousel
                 swipeable={false}

@@ -8,6 +8,7 @@
 html,
 body {
   font-family: 'Inter', 'Open-Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 .nav-container{
     @apply w-full max-w-8xl mx-auto px-8 lg:px-16 py-10;

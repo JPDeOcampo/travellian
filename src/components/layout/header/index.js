@@ -75,7 +75,9 @@ const Header = () => {
         };
     }, [isMenuDrawer]);
 
-
+    const handleMenuClick = () => {
+        setIsMenuDrawer(false);
+    }
     return (
         <nav className='absolute z-50 w-full'>
             {
@@ -90,7 +92,7 @@ const Header = () => {
                         <ul className={`flex gap-8 lg:flex-row ${isMenuDrawer ? 'flex-col' : ''}`}>
                             {
                                 menuItem.map((item, index) => (
-                                    <li className="menu-item relative" key={index}><a className='tex-p1 text-neutral-white hover:text-neutral-black hover:lg:text-primary' href='#'>{item.title}</a></li>
+                                    <li className="menu-item relative" key={index}><a className='tex-p1 text-neutral-white hover:text-neutral-black hover:lg:text-primary' href={item.href} onClick={handleMenuClick}>{item.title}</a></li>
                                 ))
                             }
                         </ul>

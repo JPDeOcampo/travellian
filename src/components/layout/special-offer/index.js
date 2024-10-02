@@ -51,7 +51,7 @@ const SpecialOffer = () => {
     };
 
     return (
-        <section className="default-container">
+        <section className="default-container" id="special-offer">
             <SubHeader title={"Special Offer"} subtitle={"Check out our special offer and discounts."} position={"right"} lineWidth={"170px"} hasBtn={true} next={next} previous={previous} />
             <Carousel
                 swipeable={false}

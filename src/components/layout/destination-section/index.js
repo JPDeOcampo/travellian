@@ -52,7 +52,7 @@ const DestinationSection = () => {
     };
 
     return (
-        <section className="h-full relative default-container !pt-28">
+        <section className="h-full relative default-container !pt-28" id="destination-section">
             <SubHeader title={"Popular Destinations"}
                 subtitle={"Most popular destinations around the world, from historical places to natural wonders."}
                 position={"left"} lineWidth={"240px"} hasBtn={true} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} next={next} previous={previous} />

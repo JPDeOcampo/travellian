@@ -43,7 +43,7 @@ const TravelerExperiences = () => {
         }
     };
     return (
-        <section className="default-container !pb-56">
+        <section className="default-container !pb-56" id="traveler-experience">
             <SubHeader title={"Traveler’s Experiences"} subtitle={"Here some awesome feedback from our travelers."} position={"left"} lineWidth={"240px"} hasBtn={false} />
             
                 <Carousel

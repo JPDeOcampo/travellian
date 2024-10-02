@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const OurBlog = () => {
     return (
-        <section className="default-container">
+        <section className="default-container" id="our-blog">
             <SubHeader title={"Our Blog"} subtitle={"An insight the incredible experience in the world."} position={"left"} lineWidth={"120px"} />
             <div className="flex items-center flex-col lg:flex-row gap-8 lg:h-3/4">
                 <div data-aos="fade-up-right" className="rounded-2xl overflow-hidden">
