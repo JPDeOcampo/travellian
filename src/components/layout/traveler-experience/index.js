@@ -55,10 +55,10 @@ const TravelerExperiences = () => {
                     arrows={false}
                     containerClass="py-16"
                     ref={carouselRef}
-                    itemClass="pr-4 lg:!pr-6">
+                    itemClass="px-2 xsm:pr-4 lg:!pr-6">
                     {travelerExperiences.map((item, index) => {
                         return (
-                            <div className="relative bg-neutral-grey1 h-full w-full  flex-shrink-0 rounded-3xl shadow-cardShadow-1" key={index} data-aos="zoom-out-up">
+                            <div className="relative bg-neutral-grey1 h-full w-full  flex-shrink-0 rounded-3xl shadow-cardShadow-4 xsm:shadow-cardShadow-1" key={index} data-aos="zoom-out-up">
                                 <div className={`absolute h-20 w-20 rounded-full overflow-hidden left-10 -top-10`}>
                                     <img src={item.image} className="h-full w-full object-cover" alt={item.name} />
                                 </div>

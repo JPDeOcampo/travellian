@@ -59,12 +59,12 @@ const DestinationGallery = () => {
                 ssr={true}
                 arrows={false}
                 containerClass="py-6"
-                ref={carouselRef} itemClass="pr-4 lg:!pr-6">
+                ref={carouselRef} itemClass="px-2 xsm:pr-4 lg:!pr-6">
 
                 {destinationGallery.map((item, index) => {
                     return (
                         <div className="group relative" key={index} data-aos="zoom-out-down">
-                            <div className={`h-[400px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-1 z-[4]`}>
+                            <div className={`h-[400px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-4 xsm:shadow-cardShadow-1 z-[4]`}>
                                 <div className="overlay-primary"></div>
                                 <img src={item.image} className="h-full w-full object-cover" alt={item.title} />
                             </div>

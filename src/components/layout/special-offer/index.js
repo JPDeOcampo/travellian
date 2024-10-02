@@ -62,11 +62,11 @@ const SpecialOffer = () => {
                 arrows={false}
                 containerClass="py-6"
                 ref={carouselRef}
-                itemClass="pr-4 lg:!pr-6">
+                itemClass="px-2 xsm:pr-4 lg:!pr-6">
 
                 {specialOffer.map((item, index) => {
                     return (
-                        <div className="h-full w-full rounded-3xl overflow-hidden relative flex flex-col shadow-cardShadow-2" key={index} data-aos="zoom-in-up">
+                        <div className="h-full w-full rounded-3xl overflow-hidden relative flex flex-col shadow-cardShadow-4 xsm:shadow-cardShadow-2" key={index} data-aos="zoom-in-up">
                             <div className="w-full h-60 relative">
                                 <div className="overlay-primary"></div>
                                 <img src={item.image} className="object-cover h-full w-full" />

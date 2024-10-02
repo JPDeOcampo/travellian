@@ -65,11 +65,11 @@ const DestinationSection = () => {
                 arrows={false}
                 containerClass="py-6"
                 ref={carouselRef}
-                itemClass="pr-4 lg:!pr-6">
+                itemClass="px-2 xsm:pr-4 lg:!pr-6">
 
                 {destinations.map((item, index) => {
                     return (
-                        <div className="h-[450px] md:h-[497px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-1 flex-shrink-0" key={index} data-aos="zoom-in-down">
+                        <div className="h-[450px] md:h-[497px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-4 xsm:shadow-cardShadow-1 flex-shrink-0" key={index} data-aos="zoom-in-down">
                             <div className="overlay-primary"></div>
                             <img src={item.image} className="h-full w-full object-cover" />
                             <div className="absolute h-full w-full flex flex-col justify-end gap-1 inset-0 p-6 z-[2]">
