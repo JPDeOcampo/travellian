@@ -84,15 +84,15 @@ const Header = () => {
                 isMenuDrawer && <BackDrop zIndex={"z-0"} isHide={"lg:hidden"} />
             }
             <div className='nav-container relative flex justify-between items-center'>
-                <div data-aos="fade-down" className="w-40 md:w-56 lg:w-64 h-10 md:h-11 lg:h-12">
+                <div data-aos="fade-down" className="w-40 md:w-56 lg:w-64 h-8 md:h-11 lg:h-12">
                     <img src='/images/logo.png' className="w-full h-full" alt="logo"/>
                 </div>
                 <div className={`menu-drawer lg:w-3/5 flex lg:flex-row lg:justify-between items-center ${isMenuDrawer ? 'transition-all duration-400 bg-primary w-full md:w-1/2 h-lvh flex-col gap-12 items-center absolute top-0 right-0 p-4' : 'bg-transparent w-0'}`}>
                     <div className={`lg:block ${isMenuDrawer ? 'block pt-36' : 'hidden'}`}>
-                        <ul className={`flex gap-8 lg:flex-row ${isMenuDrawer ? 'flex-col' : ''}`}>
+                        <ul className={`text-center flex gap-8 lg:flex-row ${isMenuDrawer ? 'flex-col' : ''}`}>
                             {
                                 menuItem.map((item, index) => (
-                                    <li className="menu-item relative" key={index}><a className='tex-p1 text-neutral-white hover:text-neutral-black hover:lg:text-primary' href={item.href} onClick={handleMenuClick}>{item.title}</a></li>
+                                    <li className="menu-item relative" key={index}><a className='tex-p1 text-neutral-white hover:text-neutral-black hover:lg:text-primary font-medium' href={item.href} onClick={handleMenuClick}>{item.title}</a></li>
                                 ))
                             }
                         </ul>

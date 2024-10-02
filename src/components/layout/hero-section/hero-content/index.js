@@ -23,7 +23,7 @@ const HeroContent = () => {
                                     <input type='date' />
                                 </div>
                                 <div className='flex flex-col gap-2 w-full'>
-                                    <label className='text-p3 sm:text-p2  md:text-p1'>Check Out</label>
+                                    <label className='text-p3 sm:text-p2 md:text-p1'>Check Out</label>
                                     <input type='date' />
                                 </div>
                             </div>

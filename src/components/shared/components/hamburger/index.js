@@ -3,7 +3,7 @@ const Hamburger = ({ isMenuDrawer, handleClick }) => {
     const menuClass = `w-6 h-[3px] rounded bg-neutral-white duration-400`;
 
     return (
-        <div className={`flex py-6 pl-6`}>
+        <div className={`flex py-4 md:py-6 pl-6`}>
             <div className="flex justify-center items-center w-6 h-6">
                 <div className="inline-block cursor-pointer" onClick={handleClick}>
                     <div
