@@ -74,7 +74,7 @@ const SpecialOffer = () => {
                             <div className="h-full w-full py-7 px-6 flex flex-col gap-12 bg-primary-25">
                                 <div className="flex flex-col gap-4">
                                     <div className="flex flex-col gap-2">
-                                        <h4 className="text-h4 text-neutral-grey font-medium">{item.country}</h4>
+                                        <h4 className="text-h5 md:text-h4 text-neutral-grey font-medium">{item.country}</h4>
                                         <StarsComponent item={item} />
                                     </div>
                                     <div>

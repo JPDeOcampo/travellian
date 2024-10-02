@@ -52,7 +52,7 @@ const DestinationSection = () => {
     };
 
     return (
-        <section className="h-full relative default-container !pt-28" id="destination-section">
+        <section className="h-full relative default-container !pt-20 lg:!pt-28" id="destination-section">
             <SubHeader title={"Popular Destinations"}
                 subtitle={"Most popular destinations around the world, from historical places to natural wonders."}
                 position={"left"} lineWidth={"240px"} hasBtn={true} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} next={next} previous={previous} />
@@ -69,14 +69,14 @@ const DestinationSection = () => {
 
                 {destinations.map((item, index) => {
                     return (
-                        <div className="h-[497px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-1 flex-shrink-0" key={index} data-aos="zoom-in-down">
+                        <div className="h-[450px] md:h-[497px] w-full rounded-3xl overflow-hidden relative shadow-cardShadow-1 flex-shrink-0" key={index} data-aos="zoom-in-down">
                             <div className="overlay-primary"></div>
                             <img src={item.image} className="h-full w-full object-cover" />
                             <div className="absolute h-full w-full flex flex-col justify-end gap-1 inset-0 p-6 z-[2]">
-                                <h3 className="text-neutral-white font-semibold text-h3 tracking-wide">{item.title}</h3>
+                                <h3 className="text-neutral-white font-semibold text-h4 md:text-h3 tracking-wide">{item.title}</h3>
                                 <div className="flex gap-1 items-center">
                                     <span><IoMdPin className="text-neutral-white text-sm" /></span>
-                                    <p className="text-neutral-white text-p1 font-medium">{item.country}</p>
+                                    <p className="text-neutral-white text-p2 md:text-p1 font-medium">{item.country}</p>
                                 </div>
 
                             </div>

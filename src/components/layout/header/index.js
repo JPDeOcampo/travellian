@@ -84,8 +84,8 @@ const Header = () => {
                 isMenuDrawer && <BackDrop zIndex={"z-0"} isHide={"lg:hidden"} />
             }
             <div className='nav-container relative flex justify-between items-center'>
-                <div data-aos="fade-down">
-                    <img src='/images/logo.png' />
+                <div data-aos="fade-down" className="w-40 md:w-56 lg:w-64 h-10 md:h-11 lg:h-12">
+                    <img src='/images/logo.png' className="w-full h-full" alt="logo"/>
                 </div>
                 <div className={`menu-drawer lg:w-3/5 flex lg:flex-row lg:justify-between items-center ${isMenuDrawer ? 'transition-all duration-400 bg-primary w-full md:w-1/2 h-lvh flex-col gap-12 items-center absolute top-0 right-0 p-4' : 'bg-transparent w-0'}`}>
                     <div className={`lg:block ${isMenuDrawer ? 'block pt-36' : 'hidden'}`}>
@@ -99,8 +99,8 @@ const Header = () => {
                     </div>
                     <div className={`lg:block ${isMenuDrawer ? 'block' : 'hidden'}`}>
                         <div data-aos="zoom-in-left">
-                            <button className='bg-transparent text-neutral-white hover:text-neutral-black hover:lg:text-primary py-2 px-4 rounded-md'>Login</button>
-                            <button className='bg-neutral-white lg:bg-primary hover:bg-primary-300 text-neutral-black py-2 px-4 rounded-md'>Sign Up</button>
+                            <button className='bg-transparent text-neutral-white hover:text-neutral-black hover:lg:text-primary font-medium py-2 px-4 rounded-md'>Login</button>
+                            <button className='bg-neutral-white lg:bg-primary hover:bg-primary-300 text-neutral-black py-2 px-4 font-medium rounded-md'>Sign Up</button>
                         </div>
                     </div>
                 </div>

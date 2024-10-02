@@ -26,7 +26,7 @@ const TripPlanners = () => {
                                         <p className="text-p2 text-secondary uppercase font-medium">€{item.price}</p>
                                     </div>
 
-                                    <h3 className="text-secondary text-h4 tracking-wide font-semibold">{item.title}</h3>
+                                    <h3 className="text-secondary text-h5 md:text-h4 tracking-wide font-semibold">{item.title}</h3>
                                     <div className="flex gap-1 items-center justify-between">
                                         <StarsComponent item={item} />
                                         <p className="text-micro text-secondary font-medium">{item.days} Days tour</p>

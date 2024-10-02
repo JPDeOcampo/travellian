@@ -23,7 +23,7 @@ const UpButton = () => {
     return (
         <>
             {
-                !scrollShow && <div className="fixed z-50 bottom-8 right-7 w-16 h-16 flex items-center justify-center bg-primary hover:bg-primary-300 rounded-full" data-aos="fade-up">
+                !scrollShow && <div className="fixed z-50 bottom-8 right-7 w-14 md:w-16 h-14 md:h-16 flex items-center justify-center bg-primary hover:bg-primary-300 rounded-full" data-aos="fade-up">
                     <a className="[&_svg]:text-neutral-white text-h1" href={'#home'}><MdKeyboardArrowUp /></a>
                 </div>
             }
