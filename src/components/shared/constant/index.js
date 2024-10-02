@@ -202,28 +202,28 @@ const travelerExperiences = [
     {
         name: "John Doe",
         status: "Manager",
-        image: "/images/trip-planners/switzerland.jpg",
+        image: "/images/icons/account-avatar-1.svg",
         ratings: 4,
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."
     },
     {
         name: "Karen Lively",
         status: "Journalist, HWO News",
-        image: "/images/trip-planners/switzerland.jpg",
+        image: "/images/icons/account-avatar-2.svg",
         ratings: 4,
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."
     },
     {
         name: "Maik Eberhart",
         status: "Blogger",
-        image: "/images/trip-planners/switzerland.jpg",
+        image: "/images/icons/account-avatar-3.svg",
         ratings: 4,
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."
     },
     {
         name: "Ellen Kaur",
         status: "Model",
-        image: "/images/trip-planners/switzerland.jpg",
+        image: "/images/icons/account-avatar-4.svg",
         ratings: 4,
         comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness."
     },
