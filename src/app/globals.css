@@ -46,7 +46,7 @@ input{
 }
 
 .button-primary{
-    @apply bg-primary w-auto h-auto hover:bg-primary-300 uppercase px-8 py-3 rounded-xl text-neutral-white text-p2 md:text-p1;
+    @apply bg-primary w-auto h-auto hover:bg-primary-300 uppercase px-8 py-3 rounded-xl text-neutral-white text-p2 md:text-p1 font-medium;
 }
 .menu-item::after{
     content: "";
