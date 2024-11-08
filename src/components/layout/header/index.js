@@ -25,7 +25,7 @@ const Menu = () => {
             <div>
                 <div data-aos="zoom-in-left">
                     <button className='bg-transparent text-neutral-white hover:text-neutral-black hover:lg:text-primary py-2 px-4 rounded-md'>Login</button>
-                    <button className='bg-neutral-white lg:bg-primary hover:bg-primary-300 text-neutral-black py-2 px-4 rounded-md'>Sign Up</button>
+                    <button className='bg-neutral-white lg:bg-primary hover:bg-primary-300 text-neutral-primary lg:text-neutral-white py-2 px-4 rounded-md'>Sign Up</button>
                 </div>
             </div>
         </div>
