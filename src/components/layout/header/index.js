@@ -10,27 +10,7 @@ const BackDrop = ({ zIndex, isHide }) => {
         ></div>
     );
 };
-const Menu = () => {
-    return (
-        <div className="menu-drawer lg:w-3/5 flex flex-col lg:flex-row lg:justify-between items-center">
-            <div>
-                <ul className={`flex gap-8 lg:flex-row ${isMenuDrawer ? 'flex-col' : ''}`}>
-                    {
-                        menuItem.map((item, index) => (
-                            <li key={index}><a className='text-neutral-white' href='#'>{item.title}</a></li>
-                        ))
-                    }
-                </ul>
-            </div>
-            <div>
-                <div data-aos="zoom-in-left">
-                    <button className='bg-transparent text-neutral-white hover:text-neutral-black hover:lg:text-primary py-2 px-4 rounded-md'>Login</button>
-                    <button className='bg-neutral-white lg:bg-primary hover:bg-primary-300 text-neutral-primary lg:text-neutral-white py-2 px-4 rounded-md'>Sign Up</button>
-                </div>
-            </div>
-        </div>
-    );
-}
+
 const Header = () => {
     const [isMenuDrawer, setIsMenuDrawer] = useState(false);
     const menuRef = useRef(null);
@@ -100,7 +80,7 @@ const Header = () => {
                     <div className={`lg:block ${isMenuDrawer ? 'block' : 'hidden'}`}>
                         <div data-aos="zoom-in-left">
                             <button className='bg-transparent text-neutral-white hover:text-neutral-black hover:lg:text-primary font-medium py-2 px-4 rounded-md'>Login</button>
-                            <button className='bg-neutral-white lg:bg-primary hover:bg-primary-300 text-neutral-black py-2 px-4 font-medium rounded-md'>Sign Up</button>
+                            <button className='bg-neutral-white lg:bg-primary hover:bg-primary-300 text-primary lg:text-neutral-white py-2 px-4 font-medium rounded-md'>Sign up</button>
                         </div>
                     </div>
                 </div>
